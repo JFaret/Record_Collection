@@ -1183,74 +1183,69 @@
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <key id="368" parent="337" name="PRIMARY">
+    <index id="368" parent="337" name="FK_Album1">
+      <ColNames>Album_ID</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="369" parent="337" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Owner_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="369" parent="337" name="FK_Album1">
-      <ColNames>Owner_ID</ColNames>
+    <foreign-key id="370" parent="337" name="FK_Album1">
+      <ColNames>Album_ID</ColNames>
       <RefTableName>album</RefTableName>
       <RefColNames>Album_ID</RefColNames>
     </foreign-key>
-    <column id="370" parent="338" name="Label_ID">
+    <column id="371" parent="338" name="Label_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="371" parent="338" name="Album_ID">
+    <column id="372" parent="338" name="Album_ID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="372" parent="338" name="Label_Name">
+    <column id="373" parent="338" name="Label_Name">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="373" parent="338" name="Location">
+    <column id="374" parent="338" name="Location">
       <Position>4</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <index id="374" parent="338" name="FK_Album">
-      <ColNames>Album_ID</ColNames>
-      <Type>btree</Type>
-    </index>
     <key id="375" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Label_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="376" parent="338" name="FK_Album">
-      <ColNames>Album_ID</ColNames>
-      <RefTableName>album</RefTableName>
-      <RefColNames>Album_ID</RefColNames>
-    </foreign-key>
-    <column id="377" parent="339" name="Song_ID">
+    <column id="376" parent="339" name="Song_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="378" parent="339" name="Album_ID">
+    <column id="377" parent="339" name="Album_ID">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="379" parent="339" name="Song_Name">
+    <column id="378" parent="339" name="Song_Name">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="380" parent="339" name="Song_Duration">
+    <column id="379" parent="339" name="Song_Duration">
       <Position>4</Position>
       <DataType>time|0s</DataType>
     </column>
-    <index id="381" parent="339" name="FK_Album3">
+    <index id="380" parent="339" name="FK_Songs">
       <ColNames>Album_ID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="382" parent="339" name="PRIMARY">
+    <key id="381" parent="339" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Song_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="383" parent="339" name="FK_Album3">
+    <foreign-key id="382" parent="339" name="FK_Songs">
       <ColNames>Album_ID</ColNames>
       <RefTableName>album</RefTableName>
       <RefColNames>Album_ID</RefColNames>
