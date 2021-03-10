@@ -5132,115 +5132,119 @@
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <index id="1229" parent="415" name="FK_Artist">
+    <column id="1229" parent="415" name="Release_Year">
+      <Position>8</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <index id="1230" parent="415" name="FK_Artist">
       <ColNames>Artist_ID</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="1230" parent="415" name="FK_Owner">
+    <index id="1231" parent="415" name="FK_Owner">
       <ColNames>Owner_ID</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="1231" parent="415" name="FK_Label">
+    <index id="1232" parent="415" name="FK_Label">
       <ColNames>Label_ID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="1232" parent="415" name="PRIMARY">
+    <key id="1233" parent="415" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Album_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1233" parent="415" name="FK_Artist">
+    <foreign-key id="1234" parent="415" name="FK_Artist">
       <ColNames>Artist_ID</ColNames>
       <RefTableName>artist</RefTableName>
       <RefColNames>Artist_ID</RefColNames>
     </foreign-key>
-    <foreign-key id="1234" parent="415" name="FK_Owner">
+    <foreign-key id="1235" parent="415" name="FK_Owner">
       <ColNames>Owner_ID</ColNames>
       <RefTableName>owner</RefTableName>
       <RefColNames>Owner_ID</RefColNames>
     </foreign-key>
-    <foreign-key id="1235" parent="415" name="FK_Label">
+    <foreign-key id="1236" parent="415" name="FK_Label">
       <ColNames>Label_ID</ColNames>
       <RefTableName>label</RefTableName>
       <RefColNames>Label_ID</RefColNames>
     </foreign-key>
-    <column id="1236" parent="416" name="Artist_ID">
+    <column id="1237" parent="416" name="Artist_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="1237" parent="416" name="Artist_Name">
+    <column id="1238" parent="416" name="Artist_Name">
       <Position>2</Position>
       <DataType>varchar(150)|0s</DataType>
     </column>
-    <column id="1238" parent="416" name="Country">
+    <column id="1239" parent="416" name="Country">
       <Position>3</Position>
       <DataType>varchar(150)|0s</DataType>
     </column>
-    <key id="1239" parent="416" name="PRIMARY">
+    <key id="1240" parent="416" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Artist_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="1240" parent="417" name="Label_ID">
+    <column id="1241" parent="417" name="Label_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="1241" parent="417" name="Label_Name">
+    <column id="1242" parent="417" name="Label_Name">
       <Position>2</Position>
       <DataType>varchar(150)|0s</DataType>
     </column>
-    <key id="1242" parent="417" name="PRIMARY">
+    <key id="1243" parent="417" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Label_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="1243" parent="418" name="Owner_ID">
+    <column id="1244" parent="418" name="Owner_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="1244" parent="418" name="Owner_Name">
+    <column id="1245" parent="418" name="Owner_Name">
       <Position>2</Position>
       <DataType>varchar(150)|0s</DataType>
     </column>
-    <key id="1245" parent="418" name="PRIMARY">
+    <key id="1246" parent="418" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Owner_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="1246" parent="419" name="Song_ID">
+    <column id="1247" parent="419" name="Song_ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="1247" parent="419" name="Song_Name">
+    <column id="1248" parent="419" name="Song_Name">
       <Position>2</Position>
       <DataType>varchar(150)|0s</DataType>
     </column>
-    <column id="1248" parent="419" name="Song_Duration">
+    <column id="1249" parent="419" name="Song_Duration">
       <Position>3</Position>
       <DataType>time|0s</DataType>
     </column>
-    <column id="1249" parent="419" name="album_ID">
+    <column id="1250" parent="419" name="album_ID">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <index id="1250" parent="419" name="FK_Song1">
+    <index id="1251" parent="419" name="FK_Song1">
       <ColNames>album_ID</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="1251" parent="419" name="PRIMARY">
+    <key id="1252" parent="419" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Song_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="1252" parent="419" name="FK_Song1">
+    <foreign-key id="1253" parent="419" name="FK_Song1">
       <ColNames>album_ID</ColNames>
       <RefTableName>album</RefTableName>
       <RefColNames>Album_ID</RefColNames>
